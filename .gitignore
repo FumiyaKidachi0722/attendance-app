@@ -1,0 +1,13 @@
+# attendance-app/.gitignore
+
+# 依存関係ディレクトリ
+node_modules/
+
+# ビルドファイル
+dist/
+
+# 環境変数
+.env
+
+# エディタ設定
+.vscode/
