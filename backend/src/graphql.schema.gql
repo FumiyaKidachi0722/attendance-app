@@ -1,0 +1,31 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type LoginResponse {
+  token: String!
+  userName: String!
+}
+
+type WorkResponse {
+  message: String!
+}
+
+type Hello {
+  message: String!
+}
+
+type Query {
+  hello: Hello!
+}
+
+type Mutation {
+  login(name: String!, password: String!): LoginResponse!
+  startWork(attendanceData: AttendanceData!): WorkResponse!
+  endWork(attendanceData: AttendanceData!): WorkResponse!
+}
+
+input AttendanceData {
+  userName: String!
+  time: String!
+}

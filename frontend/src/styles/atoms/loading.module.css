@@ -1,0 +1,12 @@
+/* loading.module.css */
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loadingText {
+  font-size: 24px;
+  font-weight: bold;
+}
