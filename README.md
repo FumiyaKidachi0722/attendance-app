@@ -57,6 +57,7 @@ yarn add @slack/web-api
 
 ### 5. テスト
 
+1. 環境変数の設定
 - frontend/.env.localに以下を追加する
   ```bash
   NEXT_PUBLIC_API_ENDPOINT=http://localhost:4000
@@ -81,6 +82,9 @@ yarn add @slack/web-api
   # See the documentation for all the connection string options: https://pris.ly/d/connection-strings
   DATABASE_URL="postgresql://admin:qwert5432!@localhost:5432/mydb?schema=public"
   ```
+
+2. frontendで`yarn dev`をし、backendで`yarn start`する
+3. DBを起動させる
 
 ### 6. その他
 
