@@ -57,7 +57,30 @@ yarn add @slack/web-api
 
 ### 5. テスト
 
-- 各機能の単体テストと統合テストを実施する。
+- frontend/.env.localに以下を追加する
+  ```bash
+  NEXT_PUBLIC_API_ENDPOINT=http://localhost:4000
+  ```
+- backend/.envに以下を追加する
+  ```bash
+  ALLOWED_ORIGIN=http://localhost:3000
+  PORT=4000
+  SLACK_TOKEN=
+  CHANNEL_ID=
+  SHEET_ID=
+  GOOGLE_PROJECT_ID=
+  GOOGLE_PRIVATE_KEY=
+  GOOGLE_CLIENT_EMAIL=
+  # その他の変数も同様に設定
+
+  # This was inserted by `prisma init`:
+  # Environment variables declared in this file are automatically made available to Prisma.
+  # See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+
+  # Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
+  # See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+  DATABASE_URL="postgresql://admin:qwert5432!@localhost:5432/mydb?schema=public"
+  ```
 
 ### 6. その他
 
